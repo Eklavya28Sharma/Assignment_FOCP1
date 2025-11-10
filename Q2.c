@@ -1,11 +1,12 @@
 #include <stdio.h>
 int hcf(int a,int b){
     int num = (a<b) ? a : b;int h=0;
-    for(int i= 2 ;i<=num;i++){
+    for(int i= 1;i<=num;i++){
         if(a%i==0 && b%i==0){
             h=i;
         }
     }
+
     return h;
    }
 
